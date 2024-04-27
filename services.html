@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .accordion {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ddd;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li class="dropdown" style="float:right;">
+                    <a href="#" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content" style="float:right;">
+                        <a href="#">Services</a>
+                        <a href="#">Project Gallery</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <script src="app.js"></script>
+
+
+    <div class="light-theme">
+
+        <h2><br><br>At Spearhead Innovation, we specialize in providing comprehensive LED lighting solutions tailored to
+            meet
+            your needs. Our range of services includes:</h2>
+
+        <div class="accordion" onclick="toggleAccordion(this)">
+            <strong>Consultation and Design</strong>
+        </div>
+        <div class="panel">
+            <p>We begin by understanding your unique requirements and goals. Our expert team will conduct a thorough
+                assessment of your space to design a customized LED lighting solution that maximizes efficiency,
+                comfort, and aesthetics.</p>
+        </div>
+
+        <div class="accordion" onclick="toggleAccordion(this)">
+            <strong>Installation and Implementation</strong>
+        </div>
+        <div class="panel">
+            <p>Once the design is finalized, our skilled technicians will handle the installation process efficiently
+                and professionally. From retrofitting existing fixtures to installing state-of-the-art LED systems, we
+                ensure seamless integration with minimal disruption to your operations.</p>
+        </div>
+
+        <div class="accordion" onclick="toggleAccordion(this)">
+            <strong>Product Procurement</strong>
+        </div>
+        <div class="panel">
+            <p>As a trusted partner with industry-leading manufacturers, we source high-quality LED lighting products at
+                competitive prices. Whether you need bulbs, fixtures, controls, or accessories, we provide access to a
+                wide range of options to suit your preferences and budget.</p>
+        </div>
+
+        <div class="accordion" onclick="toggleAccordion(this)">
+            <strong>Maintainence and Support</strong>
+        </div>
+        <div class="panel">
+            <p>Our commitment to customer satisfaction extends beyond installation. We offer ongoing maintenance
+                services to ensure your LED lighting system operates at peak performance, minimizing downtime and
+                prolonging the lifespan of your investment.</p>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
