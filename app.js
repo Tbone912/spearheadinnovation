@@ -15,11 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleAccordion(accordion) {
-  accordion.classList.toggle("active");
+  accordion.classList.toggle('active');
   var panel = accordion.nextElementSibling;
+  var toggle = accordion.querySelector('.accordion-toggle');
   if (panel.style.maxHeight) {
-    panel.style.maxHeight = null;
+      panel.style.maxHeight = null;
+
   } else {
-    panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }
