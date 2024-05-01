@@ -209,3 +209,68 @@ h2.center {
   width: auto;
   height: 300px;
 }
+
+.spearhead-link {
+  color: #333; /* Set color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+  margin-right: 20px; /* Add some space between the link and the dropdown */
+}
+
+
+.hamburger-icon {
+  width: 40px;
+  height: 5px;
+  background-color: #333;
+  margin: 1px;
+  transition: 0.4s;
+}
+
+.hamburger-icon:before,
+.hamburger-icon:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #333;
+  transition: 0.4s;
+}
+
+
+.toggle-btn.active .hamburger-icon {
+  background-color: transparent;
+}
+
+.toggle-btn.active .hamburger-icon:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.toggle-btn.active .hamburger-icon:after {
+  transform: rotate(45deg) translate(-8px, -6px);
+}
+
+
+.toggle-btn {
+  position: relative;
+  right: 80%;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
