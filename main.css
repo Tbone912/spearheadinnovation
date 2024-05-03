@@ -1,3 +1,4 @@
+/* TEXT*/
 .big-text {
   font-size: 5vw;
   /* Adjust the size as needed */
@@ -45,6 +46,7 @@
   text-align: center;
 }
 
+/* MENU */
 .menu {
   position: fixed;
   /* Set header to a fixed position */
@@ -98,9 +100,9 @@
   display: none;
   position: absolute;
   right: 0;
-  background-color: #be0b0b;
+  background-color: #696969;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(75, 64, 64, 0.2);
   z-index: 1;
 }
 
@@ -118,6 +120,7 @@
   background-color: #363636;
 }
 
+/* ACCORDIAN */
 .accordion-container {
   float: center;
   width: 50%; /* Adjust width as needed */
@@ -160,13 +163,14 @@
   width: calc(100%);
 }
 
+/* Service Picture */
 .profile-picture {
   float: center;
   margin-right: 20px;
   border-radius: 100%; /* Makes the image circular */
   overflow: hidden;
-  width: 250px; /* Adjust image width */
-  height: 250px; /* Adjust image height */
+  width: 300px; /* Adjust image width */
+  height: 300px; /* Adjust image height */
 }
 
 
@@ -176,11 +180,12 @@ h2.center {
   text-align: center;
 }
 
+/* Project Gallery Grid */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Adjust column width as needed */
-  grid-gap: 10px; /* Adjust gap between grid items */
-  padding: 20px;
+  grid-template-columns: repeat(2, 50%); /* Adjust column width as needed */
+  grid-gap: 5px; /* Adjust gap between grid items */
+  padding: 70px;
 }
 
 .image-grid-item {
@@ -210,6 +215,7 @@ h2.center {
   height: 300px;
 }
 
+/* Header Left */
 .spearhead-link {
   color: #333; /* Set color */
   text-decoration: none; /* Remove underline */
@@ -217,7 +223,7 @@ h2.center {
   margin-right: 20px; /* Add some space between the link and the dropdown */
 }
 
-
+/* Header Right */
 .hamburger-icon {
   width: 40px;
   height: 5px;
@@ -255,22 +261,3 @@ h2.center {
   right: 80%;
 }
 
-.column {
-  float: left;
-  padding: 10px;
-}
-
-.left {
-  width: 50%;
-}
-
-.right {
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
