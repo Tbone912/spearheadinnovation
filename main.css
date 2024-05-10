@@ -1583,7 +1583,9 @@
   }
 }
 
-
 body {
-  background-color: #f0f0f0; /* You can replace #f0f0f0 with any color code or name */
+  background-image: url('blue.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
